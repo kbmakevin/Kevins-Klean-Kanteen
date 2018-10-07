@@ -35,13 +35,17 @@ public class FruitFoodItemsActivity extends BaseActivity {
             CheckBox cb = new CheckBox(getApplicationContext());
             cb.setText(vegName);
             cb.setLayoutParams(llLayoutParams);
+            //if item has already been ordered, checkbox needs to be checked when returning from a different activity/screen to prevent user confusion (enhance UX)
+            if(checkoutItems.contains(cb.getText())) cb.setChecked(true);
             cb.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     if (((CheckBox) view).isChecked()) {
                         Toast.makeText(view.getContext(), ((CheckBox) view).getText() + getResources().getString(R.string.food_items_checkbox_selected), Toast.LENGTH_SHORT).show();
+                        checkoutItems.add(((CheckBox) view).getText().toString());
                     } else {
                         Toast.makeText(view.getContext(), ((CheckBox) view).getText() + getResources().getString(R.string.food_items_checkbox_deselected), Toast.LENGTH_SHORT).show();
+                        checkoutItems.remove(((CheckBox) view).getText().toString());
                     }
                 }
             });
