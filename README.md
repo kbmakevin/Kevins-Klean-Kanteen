@@ -30,3 +30,7 @@ Use _TextView_ objects to create the label components for your UI. Allow the use
 Display the order information in the last screen when the user finalizes the order.
 
 Use styles and themes to create a nice look and feel of your app. Use drawable objects to display the logo for the company, food types, food items, etc. 
+
+### Resource Credits:
+
+Used [this image](https://www.logolynx.com/topic/design+your+own+restaurant#&gid=1&pid=6) for the base layer for my company logo

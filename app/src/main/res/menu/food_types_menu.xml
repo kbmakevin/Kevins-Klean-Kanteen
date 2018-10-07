@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/veggies"
+        android:title="@string/menu_veg" />
+    <item
+        android:id="@+id/fruits"
+        android:title="@string/menu_fruits" />
+    <item
+        android:id="@+id/grain"
+        android:title="@string/menu_grains" />
+    <item
+        android:id="@+id/protein"
+        android:title="@string/menu_protein" />
+    <item
+        android:id="@+id/dairy"
+        android:title="@string/menu_dairy" />
+</menu>

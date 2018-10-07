@@ -1,0 +1,104 @@
+<resources>
+    <!--Application wide-->
+    <string name="package_name">"kevinma_COMP304Lab2_Ex1"</string>
+    <string name="app_name">"Kevin's Klean Kanteen"</string>
+
+    <!--Main Activity-->
+    <string name="logo_content_description">"Company Logo for Kevin's Klean Kanteen"</string>
+    <string name="enter_btn_text">"Enter"</string>
+    <string name="enter_btn_clicked_text">"Welcome to Kevin's Klean Kanteen!"</string>
+
+    <!--FoodTypes Activity-->
+    <string name="food_types_activity_label">"Kevin's Klean Kanteen: Menu"</string>
+    <string name="food_types_heading">"Triple K's Deluxe Menu"</string>
+    <string name="food_types_instructions">"Please select one of the following food types by choosing from the options menu in the top right hand corner:"</string>
+    <string name="food_types_veg">"- Vegetables and legumes/beans"</string>
+    <string name="food_types_fruits">"- Fruits"</string>
+    <string name="food_types_grains">"- Grain (cereal) foods"</string>
+    <string name="food_types_protein">"- Meat and protein"</string>
+    <string name="food_types_dairy">"- Dairy"</string>
+
+    <!--FoodTypes Menu-->
+    <string name="menu_veg">"Vegetables and legumes/beans"</string>
+    <string name="menu_fruits">"Fruits"</string>
+    <string name="menu_grains">"Grain (cereal) foods"</string>
+    <string name="menu_protein">"Meat and protein"</string>
+    <string name="menu_dairy">"Dairy"</string>
+    <string name="menu_veg_selected">"Browsing Vegetables and legumes/beans items!</string>
+    <string name="menu_fruits_selected">"Browsing Fruits items!</string>
+    <string name="menu_grain_selected">"Browsing Grain (cereal) food items!</string>
+    <string name="menu_protein_selected">"Browsing Meat and protein items!</string>
+    <string name="menu_dairy_selected">"Browsing Dairy items!</string>
+
+    <!--FoodItems Vegetables Activity-->
+    <string name="veg_food_items_activity_label">"Kevin's Klean Kanteen: Vegetables and legumes/beans"</string>
+    <string name="veg_food_items_instructions">"Shown below are our selection of vegetables offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner."</string>
+    <string-array name="vegetables">
+        <item>Spinach</item>
+        <item>Carrots</item>
+        <item>Broccoli</item>
+        <item>Brussels Sprouts</item>
+        <item>Chickpeas</item>
+        <item>Lentils</item>
+        <item>Kidney Beans</item>
+    </string-array>
+
+    <!--FoodItems Fruits Activity-->
+    <string name="fruits_food_items_activity_label">"Kevin's Klean Kanteen: Fruits"</string>
+    <string name="fruits_food_items_instructions">"Shown below are our selection of fruits offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner."</string>
+    <string-array name="fruits">
+        <item>Grapefruit</item>
+        <item>Pineapple</item>
+        <item>Avocado</item>
+        <item>Blueberries</item>
+        <item>Apples</item>
+        <item>Strawberries</item>
+        <item>Bananas</item>
+    </string-array>
+
+    <!--FoodItems Grains Activity-->
+    <string name="grains_food_items_activity_label">"Kevin's Klean Kanteen: Grain (cereal) foods"</string>
+    <string name="grains_food_items_instructions">"Shown below are our selection of grains offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner."</string>
+    <string-array name="grains">
+        <item>Whole Oats</item>
+        <item>Whole Wheat</item>
+        <item>Corn</item>
+        <item>Buckwheat</item>
+        <item>Quinoa</item>
+        <item>Millet</item>
+        <item>Brown Rice</item>
+    </string-array>
+
+    <!--FoodItems Protein Activity-->
+    <string name="protein_food_items_activity_label">"Kevin's Klean Kanteen: Meat and protein"</string>
+    <string name="proteins_food_items_instructions">"Shown below are our selection of protein food items offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner."</string>
+    <string-array name="protein">
+        <item>Salmon</item>
+        <item>Chicken Breast</item>
+        <item>Pork Tenderloin</item>
+        <item>Lean Beef</item>
+        <item>Tofu</item>
+        <item>Kidney Beans</item>
+        <item>Brown Rice</item>
+    </string-array>
+
+    <!--FoodItems Dairy Activity-->
+    <string name="dairy_food_items_activity_label">"Kevin's Klean Kanteen: Dairy"</string>
+    <string name="dairy_food_items_instructions">"Shown below are our selection of dairy food items offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner."</string>
+    <string-array name="dairy">
+        <item>Skim Milk</item>
+        <item>Greek Yogurt</item>
+        <item>Cottage Cheese</item>
+        <item>Low Fat Cream Cheese</item>
+        <item>Coconut Milk</item>
+        <item>Almond Milk</item>
+        <item>Ice Cream</item>
+    </string-array>
+
+
+    <!--FoodItems General-->
+    <string name="food_items_checkout_button_text">"Proceed to checkout"</string>
+    <string name="food_items_checkbox_selected">" has been added to checkout."</string>
+    <string name="food_items_checkbox_deselected">" has been removed from checkout."</string>
+
+</resources>

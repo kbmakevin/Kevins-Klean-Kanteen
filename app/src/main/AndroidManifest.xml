@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cencol.kevinma_comp304lab2_ex1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FoodTypesActivity"
+            android:label="@string/food_types_activity_label"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".VegFoodItemsActivity"
+            android:label="@string/veg_food_items_activity_label"
+            android:parentActivityName=".FoodTypesActivity" />
+        <activity
+            android:name=".FruitFoodItemsActivity"
+            android:label="@string/fruits_food_items_activity_label"
+            android:parentActivityName=".FoodTypesActivity" />
+        <activity
+            android:name=".GrainFoodItemsActivity"
+            android:label="@string/grains_food_items_activity_label"
+            android:parentActivityName=".FoodTypesActivity" />
+        <activity
+            android:name=".ProteinFoodItemsActivity"
+            android:label="@string/protein_food_items_activity_label"
+            android:parentActivityName=".FoodTypesActivity" />
+        <activity
+            android:name=".DairyFoodItemsActivity"
+            android:label="@string/dairy_food_items_activity_label"
+            android:parentActivityName=".FoodTypesActivity" />
+        <activity android:name=".BaseActivity"></activity>
+    </application>
+
+</manifest>
