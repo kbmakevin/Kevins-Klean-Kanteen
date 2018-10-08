@@ -153,6 +153,15 @@
         <item>0.20</item>
     </string-array>
 
+    <!--FoodTypes for Spinner-->
+    <string-array name="food_types">
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Grains</item>
+        <item>Protein</item>
+        <item>Dairy</item>
+    </string-array>
+
     <!--FoodItems General-->
     <string name="food_items_checkout_button_text">"Proceed to checkout"</string>
     <string name="food_items_checkbox_selected">" has been added to checkout bag."</string>
@@ -167,5 +176,23 @@
     <string name="checkout_option_credit_card">Credit Card</string>
     <string name="checkout_option_debit_card">Debit Card</string>
     <string name="checkout_button_text">"Checkout"</string>
+
+    <!--Payment Information Activity-->
+    <string name="payInfo_activity_request_code">2</string>
+    <string name="payment_activity_label">"Kevin's Klean Kanteen: Customer Information"</string>
+    <string name="payment_fullname_label">Full Name:</string>
+    <string name="payment_ccardnumber_label">Credit Card Number:</string>
+    <string name="payment_dcardnumber_label">Debit Card Number:</string>
+    <string name="payment_cvvnumber_label">CVV Number:</string>
+    <string name="payment_instructions_label">Dear customer, please provide your following details to confirm payment:</string>
+    <string name="payment_feedback_label">Out of curiosity, we would love to get some feedback from our customers:</string>
+    <string name="payment_favfoodtype_label">What is your favorite food type on our menu?</string>
+    <string name="payment_favfooditem_label">What is your favorite food item on our menu?</string>
+    <string name="payment_satisfactionlvl_label">How satisfied are you with our service?</string>
+    <string name="payment_total_extra_key">PAYMENT_TOTAL</string>
+    <string name="payment_option_extra_key">PAYMENT_OPTION</string>
+    <string name="payment_debit_card_extra_val">DEBIT_CARD</string>
+    <string name="payment_credit_card_extra_val">CREDIT_CARD</string>
+    <string name="payment_cash_extra_val">CASH</string>
 
 </resources>
