@@ -15,6 +15,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
     private HashMap<String, Double> foodMenu;
     private HashSet<String> checkoutItems;
+    private double paymentTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +28,21 @@ public class CheckoutActivity extends AppCompatActivity {
         this._populateFoodMenu();
         this._extractCheckoutBagItems(this.getIntent());
 
-        String m = ((TextView) findViewById(R.id.checkoutBagTextView)).getText().toString();
-        for (String key : foodMenu.keySet()) {
-            m += String.format("-> %-35s %s%.2f\n", key, "+ $", foodMenu.get(key));
-        }
+        String checkoutItemsDisplayString = ((TextView) findViewById(R.id.checkoutBagTextView)).getText().toString();
 
-        ((TextView) findViewById(R.id.checkoutBagTextView)).setText(m);
+        for (String item : checkoutItems) {
+            //add item to be displayed on screen
+            checkoutItemsDisplayString += String.format("-> %-35s %s%.2f\n", item, "+ $", foodMenu.get(item));
+
+            //calculate total bill
+            paymentTotal += foodMenu.get(item);
+        }
+//        for (String key : foodMenu.keySet()) {
+//            m += String.format("-> %-35s %s%.2f\n", key, "+ $", foodMenu.get(key));
+//        }
+
+        ((TextView) findViewById(R.id.checkoutBagTextView)).setText(checkoutItemsDisplayString);
+        ((TextView) findViewById(R.id.paymentTotalTextView)).setText(String.format("TOTAL: $%.2f", paymentTotal));
     }
 
     public void onBackPressed() {
