@@ -1,6 +1,7 @@
 package com.cencol.kevinma_comp304lab2_ex1;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class FoodTypesActivity extends BaseActivity {
     @Override

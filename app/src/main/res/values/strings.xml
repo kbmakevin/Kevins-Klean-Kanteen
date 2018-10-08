@@ -3,11 +3,23 @@
     <string name="package_name">"kevinma_COMP304Lab2_Ex1"</string>
     <string name="app_name">"Kevin's Klean Kanteen"</string>
     <string name="extras_key_chkout">"CHECKOUT_ITEMS"</string>
+    <string name="checkout_bag_current_state_display">"Food Items In Checkout Bag:\n\n</string>
 
     <!--Main Activity-->
     <string name="logo_content_description">"Company Logo for Kevin's Klean Kanteen"</string>
     <string name="enter_btn_text">"Enter"</string>
     <string name="enter_btn_clicked_text">"Welcome to Kevin's Klean Kanteen!"</string>
+
+    <!--Base Activity-->
+    <string name="cnfrm_dialog_title">"Are you sure you want to do this?"</string>
+    <string name="cnfrm_dialog_message">"Returning to the food types menu will discard all the current items saved in your checkout bag."</string>
+    <string name="rtn_home_msg">"Returning to Home Screen"</string>
+    <string name="rtn_food_types_msg">"Returning to the food types menu"</string>
+    <string name="cancel_action_msg">"Cancelled Action"</string>
+
+    <!--ConfirmationDialogFragment-->
+    <string name="pos_actn_lbl">"OK"</string>
+    <string name="neg_actn_lbl">"No, Nevermind then"</string>
 
     <!--FoodTypes Activity-->
     <string name="food_types_activity_label">"Kevin's Klean Kanteen: Menu"</string>
@@ -99,7 +111,10 @@
 
     <!--FoodItems General-->
     <string name="food_items_checkout_button_text">"Proceed to checkout"</string>
-    <string name="food_items_checkbox_selected">" has been added to checkout."</string>
-    <string name="food_items_checkbox_deselected">" has been removed from checkout."</string>
+    <string name="food_items_checkbox_selected">" has been added to checkout bag."</string>
+    <string name="food_items_checkbox_deselected">" has been removed from checkout bag."</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
