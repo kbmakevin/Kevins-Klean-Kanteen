@@ -45,7 +45,7 @@
 
     <!--FoodItems Vegetables Activity-->
     <string name="veg_food_items_activity_label">"Kevin's Klean Kanteen: Vegetables"</string>
-    <string name="veg_food_items_instructions">"Shown below are our selection of vegetables offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)."</string>
+    <string name="veg_food_items_instructions">"Shown below are our selection of vegetables offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)! Also don't worry about the price of the food items. You only live once. You need to make decisions which benefit your life in the long run. Do not be tied down by dirty money of the mortal realm."</string>
     <string-array name="vegetables">
         <item>Spinach</item>
         <item>Carrots</item>
@@ -55,10 +55,19 @@
         <item>Lentils</item>
         <item>Kidney Beans</item>
     </string-array>
+    <string-array name="vegetables_prices">
+        <item>1.05</item>
+        <item>0.85</item>
+        <item>0.99</item>
+        <item>5.42</item>
+        <item>0.75</item>
+        <item>1.50</item>
+        <item>1.25</item>
+    </string-array>
 
     <!--FoodItems Fruits Activity-->
     <string name="fruits_food_items_activity_label">"Kevin's Klean Kanteen: Fruits"</string>
-    <string name="fruits_food_items_instructions">"Shown below are our selection of fruits offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)"</string>
+    <string name="fruits_food_items_instructions">"Shown below are our selection of fruits offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)! Also don't worry about the price of the food items. You only live once. You need to make decisions which benefit your life in the long run. Do not be tied down by dirty money of the mortal realm."</string>
     <string-array name="fruits">
         <item>Grapefruit</item>
         <item>Pineapple</item>
@@ -68,10 +77,19 @@
         <item>Strawberries</item>
         <item>Bananas</item>
     </string-array>
+    <string-array name="fruits_prices">
+        <item>0.95</item>
+        <item>2.25</item>
+        <item>1.15</item>
+        <item>1.00</item>
+        <item>0.50</item>
+        <item>3.25</item>
+        <item>1.65</item>
+    </string-array>
 
     <!--FoodItems Grains Activity-->
     <string name="grains_food_items_activity_label">"Kevin's Klean Kanteen: Grains"</string>
-    <string name="grains_food_items_instructions">"Shown below are our selection of grains offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)"</string>
+    <string name="grains_food_items_instructions">"Shown below are our selection of grains offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)! Also don't worry about the price of the food items. You only live once. You need to make decisions which benefit your life in the long run. Do not be tied down by dirty money of the mortal realm."</string>
     <string-array name="grains">
         <item>Whole Oats</item>
         <item>Whole Wheat</item>
@@ -81,10 +99,19 @@
         <item>Millet</item>
         <item>Brown Rice</item>
     </string-array>
+    <string-array name="grains_prices">
+        <item>1.25</item>
+        <item>2.50</item>
+        <item>3.25</item>
+        <item>3.50</item>
+        <item>2.75</item>
+        <item>2.25</item>
+        <item>2.00</item>
+    </string-array>
 
     <!--FoodItems Protein Activity-->
     <string name="protein_food_items_activity_label">"Kevin's Klean Kanteen: Protein"</string>
-    <string name="proteins_food_items_instructions">"Shown below are our selection of protein food items offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)"</string>
+    <string name="proteins_food_items_instructions">"Shown below are our selection of protein food items offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)! Also don't worry about the price of the food items. You only live once. You need to make decisions which benefit your life in the long run. Do not be tied down by dirty money of the mortal realm."</string>
     <string-array name="protein">
         <item>Salmon</item>
         <item>Chicken Breast</item>
@@ -94,10 +121,19 @@
         <item>Edamame</item>
         <item>Black Beans</item>
     </string-array>
+    <string-array name="protein_prices">
+        <item>7.50</item>
+        <item>6.50</item>
+        <item>7.00</item>
+        <item>7.25</item>
+        <item>5.50</item>
+        <item>5.25</item>
+        <item>4.15</item>
+    </string-array>
 
     <!--FoodItems Dairy Activity-->
     <string name="dairy_food_items_activity_label">"Kevin's Klean Kanteen: Dairy"</string>
-    <string name="dairy_food_items_instructions">"Shown below are our selection of dairy food items offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)"</string>
+    <string name="dairy_food_items_instructions">"Shown below are our selection of dairy food items offered at Kevin's Klean Kantene. Please select your items and press the button below to proceed to checkout.Alternatively, you can select another food type from the menu in the top right hand corner.\n\nPlease note that you can only order one serving of each menu item. We use only the rarest and finest ingredients in the food we serve to our customers :)! Also don't worry about the price of the food items. You only live once. You need to make decisions which benefit your life in the long run. Do not be tied down by dirty money of the mortal realm."</string>
     <string-array name="dairy">
         <item>Skim Milk</item>
         <item>Greek Yogurt</item>
@@ -107,14 +143,29 @@
         <item>Almond Milk</item>
         <item>Ice Cream</item>
     </string-array>
-
+    <string-array name="dairy_prices">
+        <item>1.86</item>
+        <item>2.05</item>
+        <item>3.15</item>
+        <item>1.69</item>
+        <item>2.32</item>
+        <item>2.10</item>
+        <item>0.20</item>
+    </string-array>
 
     <!--FoodItems General-->
     <string name="food_items_checkout_button_text">"Proceed to checkout"</string>
     <string name="food_items_checkbox_selected">" has been added to checkout bag."</string>
     <string name="food_items_checkbox_deselected">" has been removed from checkout bag."</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Checkout activity-->
+    <string name="checkout_activity_request_code">1</string>
+    <string name="checkout_activity_label">"Kevin's Klean Kanteen: Checkout"</string>
+    <string name="checkout_activity_checkout_bag_header">"Your currently selected food items:\n\n"</string>
+    <string name="checkout_activity_instructions">"Please select your method of payment and press the Checkout button below:"</string>
+    <string name="checkout_option_cash">Cash</string>
+    <string name="checkout_option_credit_card">Credit Card</string>
+    <string name="checkout_option_debit_card">Debit Card</string>
+    <string name="checkout_button_text">"Checkout"</string>
 
 </resources>

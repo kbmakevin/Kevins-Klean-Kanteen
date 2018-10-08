@@ -8,6 +8,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.HashSet;
@@ -78,6 +79,14 @@ public class BaseActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    public void onActivityResult(int reqCode, int resCode, Intent data) {
+        if (reqCode == Integer.parseInt(getResources().getString(R.string.checkout_activity_request_code))) {
+            if (resCode == RESULT_OK) {
+                this._extractCheckoutBagItems(data);
+            }
+        }
     }
 
     //Helper Methods

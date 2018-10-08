@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
+import java.util.HashMap;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onMainEnterBtn(View v){
+    public void onMainEnterBtn(View v) {
         Toast.makeText(this, R.string.enter_btn_clicked_text, Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, FoodTypesActivity.class));
     }

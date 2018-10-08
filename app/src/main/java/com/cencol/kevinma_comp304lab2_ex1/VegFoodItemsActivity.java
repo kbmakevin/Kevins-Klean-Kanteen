@@ -3,6 +3,7 @@ package com.cencol.kevinma_comp304lab2_ex1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -60,6 +61,16 @@ public class VegFoodItemsActivity extends BaseActivity {
         Button checkoutBtn = new Button(getApplicationContext());
         checkoutBtn.setText(R.string.food_items_checkout_button_text);
         checkoutBtn.setLayoutParams(llLayoutParams);
+
+        checkoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(getResources().getString(R.string.extras_key_chkout), checkoutItems);
+                startActivityForResult(new Intent(getApplicationContext(), CheckoutActivity.class).putExtras(bundle), Integer.parseInt(getResources().getString(R.string.checkout_activity_request_code)));
+            }
+        });
+
         ll.addView(checkoutBtn);
 
         this.setContentView(sv);

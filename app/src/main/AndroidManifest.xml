@@ -42,7 +42,9 @@
             android:name=".DairyFoodItemsActivity"
             android:label="@string/dairy_food_items_activity_label"
             android:parentActivityName=".FoodTypesActivity" />
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".CheckoutActivity"
+            android:label="@string/checkout_activity_label"></activity>
     </application>
 
 </manifest>
