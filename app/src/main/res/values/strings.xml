@@ -3,6 +3,7 @@
     <string name="package_name">"kevinma_COMP304Lab2_Ex1"</string>
     <string name="app_name">"Kevin's Klean Kanteen"</string>
     <string name="extras_key_chkout">"CHECKOUT_ITEMS"</string>
+    <string name="extras_key_foodmenu">"FOOD_MENU"</string>
     <string name="checkout_bag_current_state_display">"Food Items In Checkout Bag:\n\n</string>
 
     <!--Main Activity-->
@@ -194,6 +195,13 @@
     <string name="payment_debit_card_extra_val">DEBIT_CARD</string>
     <string name="payment_credit_card_extra_val">CREDIT_CARD</string>
     <string name="payment_cash_extra_val">CASH</string>
+    <string name="payment_info_fullname_extra_key">PAYEE_FULL_NAME</string>
+    <string name="payment_info_cardnum_extra_key">CARD_NUMBER</string>
+    <string name="payment_info_cvvnum_extra_key">CVV_NUMBER</string>
+    <string name="payment_info_favfoodtype_extra_key">FAV_FOOD_TYPE</string>
+    <string name="payment_info_favfooditem_extra_key">FAV_FOOD_ITEM</string>
+    <string name="payment_info_satisfactionlvl_extra_key">SATISFACTION_LEVEL</string>
+
     <string-array name="satisfactionLevel">
         <item>1</item>
         <item>2</item>
@@ -207,5 +215,15 @@
     <string name="pay_info_cvv_hint">456</string>
 
     <string name="payment_info_submit_btn_lbl">Submit</string>
+
+    <!--final order info activity-->
+    <string name="final_order_info_activity_label">"Kevin's Klean Kanteen: Order Details"</string>
+    <string name="final_order_heading">Order Information</string>
+    <string name="final_payment_heading">Payment Information</string>
+    <string name="final_total_payment">TOTAL: $</string>
+    <string name="final_payment_type">Payment Type:</string>
+    <string name="final_close_btn">Close Application</string>
+
+    <string name="thank_you_msg">Thank you for taking the time to explore my App :)!</string>
 
 </resources>

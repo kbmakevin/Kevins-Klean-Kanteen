@@ -86,16 +86,25 @@ public class CheckoutActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Bundle bundle;
+
                 switch (((RadioGroup) findViewById(R.id.paymentOptRadioGroup)).getCheckedRadioButtonId()) {
                     case R.id.cashRadioButton:
                         // if paying by cash go directly to the final activity screen displaying all submitted info
+                        bundle = new Bundle();
+                        bundle.putSerializable(getResources().getString(R.string.extras_key_chkout), checkoutItems);
+                        bundle.putSerializable(getResources().getString(R.string.extras_key_foodmenu), foodMenu);
+                        bundle.putDouble(getResources().getString(R.string.payment_total_extra_key), paymentTotal);
+                        bundle.putString(getResources().getString(R.string.payment_option_extra_key), paymentOption);
+                        startActivity(new Intent(CheckoutActivity.this, FinalOrderInfoActivity.class).putExtras(bundle));
+
                         break;
                     case R.id.creditCardRadioButton:
                     case R.id.debitCardRadioButton:
                         // need payment information if paying by card
-                        Bundle bundle;
                         bundle = new Bundle();
                         bundle.putSerializable(getResources().getString(R.string.extras_key_chkout), checkoutItems);
+                        bundle.putSerializable(getResources().getString(R.string.extras_key_foodmenu), foodMenu);
                         bundle.putDouble(getResources().getString(R.string.payment_total_extra_key), paymentTotal);
                         bundle.putString(getResources().getString(R.string.payment_option_extra_key), paymentOption);
                         startActivityForResult(new Intent(CheckoutActivity.this, PaymentInformationActivity.class).putExtras(bundle), Integer.parseInt(getResources().getString(R.string.payInfo_activity_request_code)));

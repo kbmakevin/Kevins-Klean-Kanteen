@@ -13,11 +13,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class PaymentInformationActivity extends AppCompatActivity {
 
     private HashSet<String> checkoutItems;
+    private HashMap<String, Double> foodMenu;
     private double paymentTotal;
     private String paymentOption;
 
@@ -72,6 +74,48 @@ public class PaymentInformationActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.paymentInfoSubmitBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                //payment total
+                bundle.putDouble(getResources().getString(R.string.payment_total_extra_key), paymentTotal);
+                //payment option
+                bundle.putString(getResources().getString(R.string.payment_option_extra_key), paymentOption);
+                //checkout items
+                bundle.putSerializable(getResources().getString(R.string.extras_key_chkout), checkoutItems);
+                //food menu
+                bundle.putSerializable(getResources().getString(R.string.extras_key_foodmenu), foodMenu);
+                //customer full name
+                bundle.putString(getResources().getString(R.string.payment_info_fullname_extra_key),
+                        ((EditText) findViewById(R.id.fullNameEditText)).getText().toString()
+                );
+                //card number
+                bundle.putString(getResources().getString(R.string.payment_info_cardnum_extra_key),
+                        (((EditText) findViewById(R.id.cardNumEditText)).getText().toString())
+                );
+                //cvv number
+                bundle.putInt(getResources().getString(R.string.payment_info_cvvnum_extra_key),
+                        Integer.parseInt(((EditText) findViewById(R.id.cvvNumEditText)).getText().toString())
+                );
+                //fav food type
+                bundle.putString(getResources().getString(R.string.payment_info_favfoodtype_extra_key),
+                        ((Spinner) findViewById(R.id.foodTypesSpinner)).getSelectedItem().toString()
+                );
+                //fav food item
+                bundle.putString(getResources().getString(R.string.payment_info_favfooditem_extra_key),
+                        ((Spinner) findViewById(R.id.foodItemsSpinner)).getSelectedItem().toString()
+                );
+                //satisfaction level
+                bundle.putInt(getResources().getString(R.string.payment_info_satisfactionlvl_extra_key),
+                        Integer.parseInt(((Spinner) findViewById(R.id.satisfactionLevelSpinner)).getSelectedItem().toString())
+                );
+
+                startActivity(new Intent(PaymentInformationActivity.this, FinalOrderInfoActivity.class).putExtras(bundle));
+
+            }
+        });
+
         // card can only have 16 digits
         ((EditText) findViewById(R.id.cardNumEditText)).setFilters(new InputFilter[]{
                 new InputFilter.LengthFilter(16)
@@ -97,5 +141,7 @@ public class PaymentInformationActivity extends AppCompatActivity {
         }
         paymentTotal = bundle.getDouble(getResources().getString(R.string.payment_total_extra_key));
         paymentOption = bundle.getString(getResources().getString(R.string.payment_option_extra_key));
+        this.foodMenu = (HashMap<String, Double>) bundle.getSerializable(getResources().getString(R.string.extras_key_foodmenu));
+
     }
 }
