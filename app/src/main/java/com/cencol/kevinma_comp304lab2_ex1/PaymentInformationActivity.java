@@ -3,9 +3,12 @@ package com.cencol.kevinma_comp304lab2_ex1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,8 +34,8 @@ public class PaymentInformationActivity extends AppCompatActivity {
             ((TextView) findViewById(R.id.cardNumTextView)).setText(getResources().getString(R.string.payment_ccardnumber_label));
 
         // additional event handlers
-        final Spinner foodTypesSpinner = ((Spinner) findViewById(R.id.foodTypesSpinner));
-        final Spinner foodItemsSpinner = ((Spinner) findViewById(R.id.foodItemsSpinner));
+        final Spinner foodTypesSpinner = findViewById(R.id.foodTypesSpinner);
+        final Spinner foodItemsSpinner = findViewById(R.id.foodItemsSpinner);
 
         foodTypesSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -66,40 +69,13 @@ public class PaymentInformationActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-
             }
         });
 
-
-//        foodItemsSpinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-////                ArrayAdapter<String> arrayAdapter;
-//                // Create an ArrayAdapter using the string array and a default spinner layout
-//                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(PaymentInformationActivity.this, R.array.vegetables, android.R.layout.simple_spinner_item);
-//                // Specify the layout to use when the list of choices appears
-//                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//// Apply the adapter to the spinner
-//                foodItemsSpinner.setAdapter(adapter);
-////                switch (position) {
-////                    case 0:
-////                        arrayAdapter = ArrayAdapter.createFromResource(PaymentInformationActivity.this,R.array.vegetables,android.R.layout.simple_spinner_item);
-////                        arrayAdapter = new ArrayAdapter<>(PaymentInformationActivity.this, R.layout.support_simple_spinner_dropdown_item, getResources().getStringArray(R.array.vegetables));
-////                    case 1:
-////                        arrayAdapter = new ArrayAdapter<>(PaymentInformationActivity.this, R.layout.support_simple_spinner_dropdown_item, getResources().getStringArray(R.array.fruits));
-//////                        arrayAdapter = new ArrayAdapter<>(PaymentInformationActivity.this, R.layout.activity_payment_information, getResources().getStringArray(R.array.fruits));
-////                    case 2:
-////                        arrayAdapter = new ArrayAdapter<>(PaymentInformationActivity.this, R.layout.activity_payment_information, getResources().getStringArray(R.array.grains));
-////                    case 3:
-////                        arrayAdapter = new ArrayAdapter<>(PaymentInformationActivity.this, R.layout.activity_payment_information, getResources().getStringArray(R.array.protein));
-////                    default:
-////                        // default case is case 4, need a default to ensure compiler does not complain about array adapter not set
-////                        arrayAdapter = new ArrayAdapter<>(PaymentInformationActivity.this, R.layout.activity_payment_information, getResources().getStringArray(R.array.dairy));
-////                        break;
-////                }
-////                foodItemsSpinner.setAdapter(arrayAdapter);
-//            }
-//        });
+        // card can only have 16 digits
+        ((EditText) findViewById(R.id.cardNumEditText)).setFilters(new InputFilter[]{
+                new InputFilter.LengthFilter(16)
+        });
     }
 
     public void onBackPressed() {

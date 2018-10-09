@@ -194,5 +194,18 @@
     <string name="payment_debit_card_extra_val">DEBIT_CARD</string>
     <string name="payment_credit_card_extra_val">CREDIT_CARD</string>
     <string name="payment_cash_extra_val">CASH</string>
+    <string-array name="satisfactionLevel">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="pay_info_full_name_hint">John Doe</string>
+    <string name="pay_info_card_hint">4123123412341234</string>
+    <string name="pay_info_cvv_hint">456</string>
+
+    <string name="payment_info_submit_btn_lbl">Submit</string>
 
 </resources>
